@@ -1,3 +1,4 @@
 # file: ~/.gitignore_global
 .idea
 target
+pom.xml
