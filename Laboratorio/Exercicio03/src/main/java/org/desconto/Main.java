@@ -11,7 +11,7 @@ public class Main {
 
         // Input Data (reading a caractere)
         System.out.println("Fuel letter [A/G]: ");
-        letter = (char)System.in.read();
+        letter = input.next().charAt(0);
 
         System.out.println("How much liters? ");
         amountLiters = input.nextDouble();
@@ -21,23 +21,23 @@ public class Main {
         if(amountLiters <= 20 && (letter == 'G')) {
             // 0,04 the liter
             payGas = amountLiters * 6 - (amountLiters * 6) * 0.04;
-            System.out.println("Total a pagar com 4% de desconto: " + payGas);
+            System.out.println("Total a pagar com 4% de desconto: R$" + payGas);
 
-        }else {
+        }else if (letter == 'G') {
             //0,06 the liter
             payGas = amountLiters * 6 - (amountLiters * 6) * 0.06;
-            System.out.println("Total a pagar com 6% de desconto: " + payGas);
+            System.out.println("Total a pagar com 6% de desconto: R$" + payGas);
         }
 
         // Alcohol
         if (amountLiters <= 20 && (letter == 'A')) {
             // 0,03 the liter
             payAlcohol = amountLiters * 4.90 - (amountLiters * 4.90) * 0.03;
-            System.out.println("Total a pagar com 3% de desconto: " + payAlcohol);
-        }else {
+            System.out.println("Total a pagar com 3% de desconto: R$" + payAlcohol);
+        }else if(letter == 'A') {
             // 0,05 the liter
             payAlcohol = amountLiters * 4.90 - (amountLiters * 4.90) * 0.05;
-            System.out.println("Total a pagar com 3% de desconto: " + payAlcohol);
+            System.out.println("Total a pagar com 5% de desconto: R$" + payAlcohol);
         }
     }
 }
