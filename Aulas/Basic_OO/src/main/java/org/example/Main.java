@@ -8,6 +8,6 @@ public class Main {
         z1.vida = 200;
         z2.vida = 100;
 
-        z2.transfereVida(z1, 100);
+        z2.transfereVida(z1, 50);
     }
 }
