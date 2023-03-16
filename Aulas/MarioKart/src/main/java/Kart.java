@@ -1,12 +1,12 @@
 public class Kart {
-    Piloto piloto;
-    Motor motor;
+    Piloto piloto; // agregação
+    Motor motor; // Composição
 
     String nome;
 
     // Construtor
     public Kart() {
-        motor = new Motor();
+        motor = new Motor(); // Fazendo a composição
     }
 
     public void pular(){
