@@ -1,18 +1,19 @@
 package Exercicio;
 
-public class Estudante {
+public class Student {
     // Atributos do estudante
-    String nome;
+    String name;
     int idade;
+    String year;
 
-    public Estudante(String nome, int idade) {
-        this.nome = nome;
+    public Student(String name, int idade) {
+        this.name = name;
         this.idade = idade;
     }
 
     void mostraInfo() {
         System.out.println("INFOS DO ALUNO");
-        System.out.println("NOME: " + this.nome);
+        System.out.println("NOME: " + this.name);
         System.out.println("IDADE: " + this.idade);
     }
 }
