@@ -67,5 +67,9 @@ public class School {
                 }
             }
         }
+        System.out.println("Quantidade de alunos por ano");
+        System.out.println("1º ANO: "+primeiroAno);
+        System.out.println("2º ANO: "+segundoAno);
+        System.out.println("3º ANO: "+terceiroAno);
     }
 }
