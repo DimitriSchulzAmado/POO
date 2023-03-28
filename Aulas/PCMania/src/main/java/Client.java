@@ -1,3 +1,5 @@
+import java.sql.SQLOutput;
+
 public class Client {
     String name;
     long cpf;
@@ -15,7 +17,10 @@ public class Client {
     }
 
     public void showAllBuy(double sum){
-        System.out.println("Total a pagar na compra: ");
-        System.out.println("Total: R$" + sum);
+        System.out.println("------ PURCHASE ------");
+        System.out.println("Client: " + this.name);
+        System.out.println("CPF: " + this.cpf);
+        System.out.println(" ");
+        System.out.println("Total a pagar: R$" + sum);
     }
 }
