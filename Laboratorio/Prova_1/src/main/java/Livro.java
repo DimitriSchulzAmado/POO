@@ -9,11 +9,7 @@ public class Livro {
     Autor autor; // Referência para o meu autor
 
     // Construtor da classe Livro
-    public Livro(String titulo, String genLiterario, int qtdFolhas, String editora) {
-        this.titulo = titulo;
-        this.genLiterario = genLiterario;
-        this.qtdFolhas = qtdFolhas;
-        this.editora = editora;
+    public Livro() {
         this.autor = new Autor(); // Finaliza a composição entre livro e autor
     }
 
