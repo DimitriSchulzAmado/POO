@@ -1,6 +1,6 @@
 package br.inatel.second.HerancaPolimorfismo;
 
-public class Engenheiro extends Funcionario2{
+public class Engenheiro extends Funcionario2 implements GerenciarProjetos{
     private String ramoAtuacao; // Atributo para o ramo de atuação do funcionário
 
     // Reescrita de método para o especifico de engenheiro
@@ -12,6 +12,13 @@ public class Engenheiro extends Funcionario2{
 
     }
 
+    @Override
+    public void executaAcao() {
+        System.out.println(this.getNome() + " está programando!!");
+    }
+
+
+
     // Getters and Setters
     public String getRamoAtuacao() {
         return ramoAtuacao;
@@ -19,5 +26,11 @@ public class Engenheiro extends Funcionario2{
 
     public void setRamoAtuacao(String ramoAtuacao) {
         this.ramoAtuacao = ramoAtuacao;
+    }
+
+    @Override
+    public void gerenciarProjetos() {
+        System.out.println("Este engenheiro está gerindo o projeto");
+        this.mostrarInfos();
     }
 }

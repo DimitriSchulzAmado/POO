@@ -1,6 +1,6 @@
 package br.inatel.second.HerancaPolimorfismo;
 
-public class Funcionario2 {
+public abstract class Funcionario2 {
     // Atributos do funcionário
     private String nome; // Nome
     private int anoNascimento; // Ano de nascimento
@@ -10,6 +10,9 @@ public class Funcionario2 {
         System.out.println("Nome: "+this.nome);
         System.out.println("Ano nascimento: "+this.anoNascimento);
     }
+
+    // Metodos do funcionamento
+    public abstract void executaAcao();
 
     // Getters and setters da nossa classe
     public String getNome() {

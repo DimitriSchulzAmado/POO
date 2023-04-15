@@ -33,13 +33,18 @@ public class Main {
                     Professor auxProfessor = (Professor)funcionarios[i];
                     auxProfessor.mostrarInfos();
                     auxProfessor.corrigirProvas();
+                    auxProfessor.executaAcao();
                 }else if(funcionarios[i] instanceof Engenheiro){
                     // Criar uma variável auxiliar
                     Engenheiro auxEng = (Engenheiro)funcionarios[i];
                     auxEng.mostrarInfos();
+                    auxEng.executaAcao();
+                    auxEng.gerenciarProjetos();
                 }else{
                     Arquiteto auxArq = (Arquiteto) funcionarios[i];
                     auxArq.mostrarInfos();
+                    auxArq.executaAcao();
+                    auxArq.gerenciarProjetos();
                 }
             }
 

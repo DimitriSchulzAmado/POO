@@ -13,6 +13,11 @@ public class Professor extends Funcionario2 {
 
     }
 
+    @Override
+    public void executaAcao() {
+        System.out.println(this.getNome() + " está dando aulas!!");
+    }
+
     // Metodo especifico de professor
     public void corrigirProvas(){
         System.out.println("Corrigiu a prova !!!");

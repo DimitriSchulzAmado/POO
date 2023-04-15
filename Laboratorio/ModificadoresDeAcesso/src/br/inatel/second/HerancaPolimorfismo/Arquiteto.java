@@ -1,6 +1,6 @@
 package br.inatel.second.HerancaPolimorfismo;
 
-public class Arquiteto extends Funcionario2{
+public class Arquiteto extends Funcionario2 implements GerenciarProjetos{
     private String especialidade; // Especialidade do arquiteto
 
     public String getEspecialidade() {
@@ -18,5 +18,16 @@ public class Arquiteto extends Funcionario2{
         super.mostrarInfos(); // Chamando o método mostrar infos da classe mãe
         System.out.println("Especialidade: "+especialidade);
 
+    }
+
+    @Override
+    public void executaAcao() {
+        System.out.println(this.getNome() + " está planejando uma planta!!");
+    }
+
+    @Override
+    public void gerenciarProjetos() {
+        System.out.println("Este arquiteto esta gerindo o projeto");
+        this.mostrarInfos();
     }
 }
