@@ -1,2 +1,6 @@
-package br.inatel.interfaces;public interface Feitico {
+package br.inatel.interfaces;
+
+public interface Feitico {
+
+    public void lancaFeitico();
 }

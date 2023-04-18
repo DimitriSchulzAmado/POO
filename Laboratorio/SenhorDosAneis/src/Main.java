@@ -1,2 +1,2 @@
-package br.inatel;public class Main {
+public class Main {
 }
