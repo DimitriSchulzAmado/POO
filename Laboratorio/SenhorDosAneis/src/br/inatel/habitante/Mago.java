@@ -12,11 +12,15 @@ public class Mago extends Habitante implements Cura, Feitico {
 
     @Override
     public void curar() {
-
+        System.out.println("O mago está curando");
     }
 
     @Override
     public void lancaFeitico() {
+        System.out.println("O mago lançou um feitiço");
+    }
 
+    public String getCor() {
+        return cor;
     }
 }

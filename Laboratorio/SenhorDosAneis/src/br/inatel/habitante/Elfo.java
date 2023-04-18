@@ -12,12 +12,17 @@ public class Elfo extends Habitante implements Cura {
 
     // Método viajar
     public void viajar() {
-
+        System.out.println("O Elfo está viajando");
     }
 
     // Sobrescrevendo o método curar
     @Override
     public void curar() {
 
+    }
+
+    // Getter para a variavel privada
+    public String getTribo() {
+        return tribo;
     }
 }
