@@ -1,6 +1,6 @@
 package br.inatel.interfaces;
 
 public interface Feitico {
-
-    public void lancaFeitico();
+    // Método
+    public void lancarFeitico();
 }

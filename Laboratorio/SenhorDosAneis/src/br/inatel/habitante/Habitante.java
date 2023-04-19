@@ -1,32 +1,77 @@
 package br.inatel.habitante;
 
 public abstract class Habitante {
-    // Atributos da Classe
-    public static int contador;
-    protected int id;
-    protected String nome;
-    protected int idade;
-    protected float energia;
+    // Atributos
+    public static int contador=0; // Setando variavel
+    private int id;
+    private String nome;
+    private int idade;
+    private float energia;
+
+    // Agregação
+    Arma arma; // Habitante pode ter uma arma ou não
 
     // Construtor
-    public Habitante(int id, String nome, int idade, float energia) {
-        this.energia = energia;
-        this.idade = idade;
-        this.nome = nome;
-        this.id = id;
+    Habitante(){
         contador++;
-
-        // Instanciando lugar onde vive
-        TerraMedia moradia = new TerraMedia();
+        this.id = contador;
     }
 
-    // Método Atacar
-    public void atacar() {
+
+    // Métodos gerais dos habitantes da terra média
+    public void atacar(){
+        if(this.arma == null){
+            System.out.println("Arma não adicionada para o herói");
+        }else{
+            System.out.println("Informações da arma: ");
+            System.out.println("Nome: "+arma.getNomeArma());
+            System.out.println("Mágica: "+arma.isMagica());
+
+            if(arma.isMagica()){
+                System.out.println("Ataque com arma mágica");
+                this.energia=this.energia-20;
+                System.out.println("Energia após o ataque: "+this.energia);
+            }else{
+                System.out.println("Ataque com arma normal");
+                this.energia=this.energia-10;
+                System.out.println("Energia após o ataque: "+this.energia);
+            }
+        }
 
     }
 
-    // Método para mostrar informações gerais
-    public void mostraInfo() {
-
+    public void mostraInfo(){
+        System.out.println("\n");
+        System.out.println("ID: "+this.id);
+        System.out.println("Nome: "+this.nome);
+        System.out.println("Idade: "+this.idade);
+        System.out.println("Energia: "+this.energia);
     }
+
+    // Getters and setters
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public int getIdade() {
+        return idade;
+    }
+
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+
+    public float getEnergia() {
+        return energia;
+    }
+
+    public void setEnergia(float energia) {
+        this.energia = energia;
+    }
+
 }
