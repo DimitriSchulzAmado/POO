@@ -1,5 +1,6 @@
 package tryCatch;
 
+import exceptions.SaldoInsuficienteException;
 import java.util.HashSet;
 
 public class Conta {
@@ -24,6 +25,15 @@ public class Conta {
             }catch (NullPointerException e){
                 System.out.println("Erro" + e);
             }
+        }
+    }
+
+    // Método que obriga a tratar a exception(checked) prevista caso o valor seja fora da condição
+    public void sacar(double quantidade) throws SaldoInsuficienteException {
+        if (quantidade <= (this.saldo + this.limite)){
+            this.saldo -= quantidade;
+        }else {
+            throw new SaldoInsuficienteException("Saldo Insuficiente");
         }
     }
 }

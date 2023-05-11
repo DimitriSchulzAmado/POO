@@ -1,5 +1,7 @@
 package tryCatch;
 
+import exceptions.SaldoInsuficienteException;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -18,6 +20,13 @@ public class Main {
 
         // Mostrando informações
         conta.mostraInfo(); // deu erro NullPointerException
+
+        // Para fazer o metodo sacar() é obrigatório fazer o try/catch por conta do "throws" da classe Conta
+        try {
+            conta.sacar(10000);
+        } catch (SaldoInsuficienteException e) {
+            System.out.println(e.getMessage());
+        }
 
         System.out.println("Fim da Main");
     }
