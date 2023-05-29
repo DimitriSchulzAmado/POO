@@ -5,7 +5,7 @@
 ### 01- Arrays                          
 ### 02- Packages                         
 ### 03- Access Modifiers        
-### 04- Construtor and Static           
+### 04- Constructor and Static           
 ### 05- Inheritance and Polymorphism     
 ### 06- Abstract Class
 ### 07- Interface
