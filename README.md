@@ -1,8 +1,6 @@
-# POO
+# Object-Oriented Programming with Java
 
-## Object-Oriented Programming with Java
-
-### Content:
+### Viewed content:
 
 ### 01- Arrays                          
 ### 02- Packages                         
