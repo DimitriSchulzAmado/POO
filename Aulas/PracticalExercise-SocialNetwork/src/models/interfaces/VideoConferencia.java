@@ -1,4 +1,4 @@
-package interfaces;
+package models.interfaces;
 
 public interface VideoConferencia {
     // Método que reproduz uma Video Conferência
