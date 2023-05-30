@@ -12,8 +12,8 @@ public class Main {
 
         ArrayList<Livro> livros;
         Arquivo arquivo = new Arquivo();
-
-        int aux = 0;
+        
+        int linhaLer = 0; // Variavel auxiliar
 
         Scanner sc = new Scanner(System.in);
 
@@ -81,8 +81,8 @@ public class Main {
                 case 5:
                     for (int i = 0; i < livros.size() ; i++)
                         if (livros.get(i).getEditora().equals("Leya"))
-                            aux++;
-                    System.out.println("Quantidade de livros com a editora Leya: " + aux);
+                            linhaLer++;
+                    System.out.println("Quantidade de livros com a editora Leya: " + linhaLer);
                     break;
 
                 default:
