@@ -21,26 +21,27 @@ public class Usuario {
 
     // Mostrando informações/ações do usuario em determinada rede social e tratando erro
     public void mostraInfoRedeSocial() throws NotFoundSocialMediaException {
-        for (int i = 0; i < redesSociais.length; i++) {
-            if(redesSociais[i] instanceof Twitter) {
-                ((Twitter) redesSociais[i]).postarFoto();
-                ((Twitter) redesSociais[i]).postarVideo();
-                ((Twitter) redesSociais[i]).postarComentario();
-            } else if(redesSociais[i] instanceof GooglePlus) {
-                redesSociais[i].curtirPublicacao();;
-                ((GooglePlus) redesSociais[i]).fazStreaming();
-                ((GooglePlus) redesSociais[i]).compartilhar();
-            } else if(redesSociais[i] instanceof Facebook) {
-                ((Facebook) redesSociais[i]).postarFoto();
-                ((Facebook) redesSociais[i]).postarVideo();
-                ((Facebook) redesSociais[i]).postarComentario();
-            } else if(redesSociais[i] instanceof Instagram) {
-                ((Instagram) redesSociais[i]).postarFoto();
-                ((Instagram) redesSociais[i]).postarVideo();
-                ((Instagram) redesSociais[i]).postarComentario();
+        for (RedeSocial redeSocial : redesSociais) {
+            if (redeSocial instanceof Twitter) {
+                ((Twitter) redeSocial).postarFoto();
+                ((Twitter) redeSocial).postarVideo();
+                ((Twitter) redeSocial).postarComentario();
+            } else if (redeSocial instanceof GooglePlus) {
+                redeSocial.curtirPublicacao();
+                ((GooglePlus) redeSocial).fazStreaming();
+                ((GooglePlus) redeSocial).compartilhar();
+            } else if (redeSocial instanceof Facebook) {
+                ((Facebook) redeSocial).postarFoto();
+                ((Facebook) redeSocial).postarVideo();
+                ((Facebook) redeSocial).postarComentario();
+            } else if (redeSocial instanceof Instagram) {
+                ((Instagram) redeSocial).postarFoto();
+                ((Instagram) redeSocial).postarVideo();
+                ((Instagram) redeSocial).postarComentario();
             } else {
                 throw new NotFoundSocialMediaException("Rede social inválida");
             }
         }
     }
 }
+
