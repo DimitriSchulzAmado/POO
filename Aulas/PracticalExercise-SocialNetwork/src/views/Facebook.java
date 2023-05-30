@@ -1,7 +1,8 @@
-package main;
+package views;
 
-import interfaces.Compartilhamento;
-import interfaces.VideoConferencia;
+import models.interfaces.Compartilhamento;
+import models.interfaces.VideoConferencia;
+import models.abstracts.RedeSocial;
 
 public class Facebook extends RedeSocial implements VideoConferencia, Compartilhamento {
     // Herdando da superclasse
@@ -27,7 +28,7 @@ public class Facebook extends RedeSocial implements VideoConferencia, Compartilh
 
     // Sobrescrevendo os métodos das Interfaces
     @Override
-    public void Compartilhar() {
+    public void compartilhar() {
         System.out.println("Compartilhou algo no Facebook");
     }
 

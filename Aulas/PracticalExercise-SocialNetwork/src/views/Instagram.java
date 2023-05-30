@@ -1,4 +1,6 @@
-package main;
+package views;
+
+import models.abstracts.RedeSocial;
 
 public class Instagram extends RedeSocial {
     // Herdando da superclasse
@@ -9,17 +11,17 @@ public class Instagram extends RedeSocial {
     // Sobrescrevendo metodos da superclasse
     @Override
     public void postarFoto() {
-        System.out.println("Postou uma foto no Istagram!");
+        System.out.println("Postou uma foto no Instagram!");
     }
 
     @Override
     public void postarVideo() {
-        System.out.println("Postou um vídeo no Istagram!");
+        System.out.println("Postou um vídeo no Instagram!");
     }
 
     @Override
     public void postarComentario() {
-        System.out.println("comentou no Istagram!");
+        System.out.println("comentou no Instagram!");
     }
 
     @Override

@@ -1,7 +1,8 @@
-package main;
+package views;
 
-import interfaces.Compartilhamento;
-import interfaces.VideoConferencia;
+import models.interfaces.Compartilhamento;
+import models.interfaces.VideoConferencia;
+import models.abstracts.RedeSocial;
 
 public class GooglePlus extends RedeSocial implements VideoConferencia, Compartilhamento {
     // Herdando da superclasse
@@ -27,7 +28,7 @@ public class GooglePlus extends RedeSocial implements VideoConferencia, Comparti
     }
 
     @Override
-    public void Compartilhar() {
+    public void compartilhar() {
         System.out.println("Um dado foi compartilhado no GooglePlus");
     }
 
@@ -39,6 +40,6 @@ public class GooglePlus extends RedeSocial implements VideoConferencia, Comparti
     @Override
     public void curtirPublicacao() {
         super.curtirPublicacao();
-        System.out.print(" no GooglePlus!");
+        System.out.println(" no GooglePlus!");
     }
 }

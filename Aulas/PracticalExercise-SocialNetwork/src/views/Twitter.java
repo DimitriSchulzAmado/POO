@@ -1,6 +1,7 @@
-package main;
+package views;
 
-import interfaces.Compartilhamento;
+import models.interfaces.Compartilhamento;
+import models.abstracts.RedeSocial;
 
 public class Twitter extends RedeSocial implements Compartilhamento {
     // Herdando da superclasse
@@ -26,7 +27,7 @@ public class Twitter extends RedeSocial implements Compartilhamento {
 
     // Sobrescrevendo o método da Interface
     @Override
-    public void Compartilhar() {
+    public void compartilhar() {
         System.out.println("Realizou um Tweet!");
     }
 
