@@ -37,23 +37,23 @@ public class Main {
                 case 1:
                     // Criando Livro
                     Livro livro = new Livro();
-                    System.out.println("Titulo: ");
+                    System.out.println("Nome do livro: ");
                     livro.setNome(sc.nextLine());
-                    System.out.println("Autor: ");
+                    System.out.println("Autor do livro: ");
                     livro.setAutor(sc.nextLine());
                     try{
-                        System.out.println("Editora: ");
+                        System.out.println("Editora do livro: ");
                         livro.setEditora(sc.nextLine());
 
                         if (!(livro.getEditora().equals("Leya") || livro.getEditora().equals("Arqueiro") || livro.getEditora().equals("Rocco") )){
-                            throw new InfoInvalidaException("Editora errada!!");
+                            throw new InfoInvalidaException("Editora errada!!!");
 
                         }
                         System.out.println("Quantidade de páginas");
                         livro.setQtdPaginas(sc.nextInt());
 
                         if(livro.getQtdPaginas() < 0)
-                            throw new InfoInvalidaException("A quantidade de pagina não pode ser menor que 0!!");
+                            throw new InfoInvalidaException("A quantidade de pagina não pode ser negativa!");
                     }catch (InfoInvalidaException e){
                         break;
                     }
