@@ -1,4 +1,4 @@
-package main;
+package models.abstracts;
 
 public abstract class RedeSocial {
     protected String senha;
@@ -16,6 +16,6 @@ public abstract class RedeSocial {
     public abstract void postarComentario();
 
     public void curtirPublicacao(){
-        System.out.println("Curtiu uma publicação");
+        System.out.print("Curtiu uma publicação");
     }
 }
