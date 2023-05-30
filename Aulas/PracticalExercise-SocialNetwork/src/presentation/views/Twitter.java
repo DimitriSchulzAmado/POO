@@ -1,7 +1,7 @@
-package views;
+package presentation.views;
 
-import models.interfaces.Compartilhamento;
-import models.abstracts.RedeSocial;
+import presentation.models.interfaces.Compartilhamento;
+import presentation.models.abstracts.RedeSocial;
 
 public class Twitter extends RedeSocial implements Compartilhamento {
     // Herdando da superclasse

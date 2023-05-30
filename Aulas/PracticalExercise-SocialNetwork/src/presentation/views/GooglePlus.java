@@ -1,8 +1,8 @@
-package views;
+package presentation.views;
 
-import models.interfaces.Compartilhamento;
-import models.interfaces.VideoConferencia;
-import models.abstracts.RedeSocial;
+import presentation.models.interfaces.Compartilhamento;
+import presentation.models.interfaces.VideoConferencia;
+import presentation.models.abstracts.RedeSocial;
 
 public class GooglePlus extends RedeSocial implements VideoConferencia, Compartilhamento {
     // Herdando da superclasse

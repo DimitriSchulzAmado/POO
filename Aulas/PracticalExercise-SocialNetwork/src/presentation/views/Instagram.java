@@ -1,6 +1,6 @@
-package views;
+package presentation.views;
 
-import models.abstracts.RedeSocial;
+import presentation.models.abstracts.RedeSocial;
 
 public class Instagram extends RedeSocial {
     // Herdando da superclasse

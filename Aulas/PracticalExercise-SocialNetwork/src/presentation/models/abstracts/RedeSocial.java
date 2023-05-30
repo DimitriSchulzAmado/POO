@@ -1,4 +1,4 @@
-package models.abstracts;
+package presentation.models.abstracts;
 
 public abstract class RedeSocial {
     protected String senha;

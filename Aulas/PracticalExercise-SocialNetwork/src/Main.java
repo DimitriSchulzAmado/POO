@@ -1,8 +1,8 @@
-import controllers.errors.NotFoundSocialMediaException;
-import models.abstracts.RedeSocial;
-import models.Usuario;
-import views.GooglePlus;
-import views.Instagram;
+import presentation.controllers.NotFoundSocialMediaException;
+import presentation.models.abstracts.RedeSocial;
+import presentation.models.Usuario;
+import presentation.views.GooglePlus;
+import presentation.views.Instagram;
 
 public class Main {
     public static void main(String[] args) {

@@ -1,11 +1,11 @@
-package models;
+package presentation.models;
 
-import controllers.errors.NotFoundSocialMediaException;
-import models.abstracts.RedeSocial;
-import views.Facebook;
-import views.GooglePlus;
-import views.Instagram;
-import views.Twitter;
+import presentation.controllers.NotFoundSocialMediaException;
+import presentation.models.abstracts.RedeSocial;
+import presentation.views.Facebook;
+import presentation.views.GooglePlus;
+import presentation.views.Instagram;
+import presentation.views.Twitter;
 
 public class Usuario {
     private String nome;

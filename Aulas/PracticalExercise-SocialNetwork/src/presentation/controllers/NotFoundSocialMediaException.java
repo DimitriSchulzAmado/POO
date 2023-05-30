@@ -1,4 +1,4 @@
-package controllers.errors;
+package presentation.controllers;
 
 // Tratando exceção checked
 public class NotFoundSocialMediaException extends Exception{
