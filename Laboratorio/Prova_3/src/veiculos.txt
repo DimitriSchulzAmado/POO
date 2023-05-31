@@ -1,0 +1,12 @@
+++ Veiculo ++
+Bentley
+ben
+2022
+22.0
+core.utilities.Motor@5197848c
+++ Veiculo ++
+Bentley
+ben
+2022
+22.0
+core.utilities.Motor@31cefde0
