@@ -3,7 +3,6 @@ import core.utilities.Livro;
 import presentation.controllers.InfoInvalidaException;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.Scanner;
 
@@ -68,14 +67,14 @@ public class Main {
                 case 3:
                     Collections.sort(livros);
 
-                    for (int i = 0; i < livros.size() ; i++)
-                        livros.get(i).mostraInfo();
+                    for (Livro book : livros)
+                        book.mostraInfo();
                     break;
                 case 4:
                     Collections.sort(livros);
                     Collections.reverse(livros);
-                    for (int i = 0; i < livros.size() ; i++)
-                        livros.get(i).mostraInfo();
+                    for (Livro book : livros)
+                        book.mostraInfo();
                     break;
 
                 case 5:
