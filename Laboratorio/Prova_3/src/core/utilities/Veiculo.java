@@ -1,6 +1,6 @@
 package core.utilities;
 
-public class Veiculo {
+public class Veiculo implements Comparable<Veiculo>{
     private String marca; // Marca do veiculo
     private String modelo; // Modelo do veiculo
     private int ano; // Ano do veiculo
@@ -12,6 +12,7 @@ public class Veiculo {
         this.modelo = modelo;
         this.ano = ano;
         this.kmRodados = kmRodados;
+        // Composição
         motor = new Motor();
     }
 
@@ -63,5 +64,10 @@ public class Veiculo {
 
     public void setMotor(Motor motor) {
         this.motor = motor;
+    }
+
+    @Override
+    public int compareTo(Veiculo outroVeiculo) {
+        return Integer.compare(this.ano, outroVeiculo.getAno());
     }
 }
