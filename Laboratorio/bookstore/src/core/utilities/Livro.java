@@ -1,13 +1,15 @@
 package core.utilities;
 
-public class Livro {
+public class Livro implements Comparable<Livro>{
     private String nome;
     private String autor;
     private String editora;
     private int qtdPaginas;
 
     public void mostraInfo(){
-
+        System.out.println("++ Informações do Livro ++");
+        System.out.println("Nome: " + this.nome);
+        System.out.println();
     }
 
     // Getters and Setters
@@ -41,5 +43,10 @@ public class Livro {
 
     public void setQtdPaginas(int qtdPaginas) {
         this.qtdPaginas = qtdPaginas;
+    }
+
+    @Override
+    public int compareTo(Livro livro) {
+        return Integer.compare(this.qtdPaginas, livro.getQtdPaginas());
     }
 }
