@@ -57,15 +57,15 @@ public class Arquivo {
             linhaLer = br.readLine();
             while (linhaLer != null) {
                 // Comparando se o que está em linhaLer é igual a minha flag
-                if (linhaLer.contains("++ Jogo ++")) {
-                    // Variável auxiliar de jogos
+                if (linhaLer.contains("++ Livro ++")) {
+                    // Variável auxiliar de livros
                     Livro livro1 = new Livro();
                     livro1.setNome(br.readLine());
                     livro1.setAutor(br.readLine());
                     livro1.setEditora(br.readLine());
                     livro1.setQtdPaginas(Integer.parseInt(br.readLine()));
 
-                    // Adicionando o jogo no array
+                    // Adicionando o livro no array
                     encontreiNoArquivo.add(livro1);
                 }
                 linhaLer = br.readLine();
