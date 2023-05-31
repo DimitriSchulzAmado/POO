@@ -24,7 +24,6 @@ public class Arquivo {
             bw.write(veiculo.getModelo() + "\n");
             bw.write(veiculo.getAno() + "\n");
             bw.write(veiculo.getKmRodados() + "\n");
-            bw.write(veiculo.getMotor() + "\n");
         } catch (Exception e) {
             System.out.println("ERRO: " + e);
         } finally {

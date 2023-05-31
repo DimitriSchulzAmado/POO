@@ -3,11 +3,11 @@ package core.utilities;
 public class Motor {
     private double potencia; // Potencia total do veiculo
     private int numCilindros; // Qtd de cilindros do veiculo
-    Veiculo veiculo;
 
     public Motor() {
         this.potencia = potencia;
         this.numCilindros = numCilindros;
+
     }
 
     // Getters and Setters
