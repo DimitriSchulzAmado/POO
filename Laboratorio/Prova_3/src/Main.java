@@ -13,16 +13,18 @@ public class Main {
         ArrayList<Veiculo> veiculos;
         // Criando um novo arquivo
         Arquivo arquivo = new Arquivo();
-
+        // Instanciando scanner
         Scanner input = new Scanner(System.in);
-
-        boolean flag = true; //flag para manter o fluxo
-        int option = 0; // Opção do menu
+        //flag para manter o fluxo
+        boolean flag = true;
+        // Opção do menu
+        int option = 0;
 
         while (flag) {
+            // Setando no arquivo a cada vez que passa
             veiculos = arquivo.ler();
 
-            System.out.println("BEM VINDO MENU DE veiculos");
+            System.out.println("BEM VINDO MENU DE VEICULOS");
             System.out.println("1-Cadastrar veiculos");
             System.out.println("2-Mostrar as informações salvas no arquivo");
             System.out.println("3-Ordenar em ordem decrescete de ano");
@@ -70,9 +72,9 @@ public class Main {
                 case 2:
                     //armazena o retorno do medoto de leitura
                     ArrayList<Veiculo> autos = arquivo.ler();
-
+                    // Mostra os dados de todos veiculos do arquivo
                     for (Veiculo auto : autos){
-                        System.out.println("INFORMACOES DO JOGO");
+                        System.out.println("++ INFORMACOES DO VEICULO ++");
                         System.out.println(auto.getMarca());
                         System.out.println(auto.getModelo());
                         System.out.println(auto.getAno());
@@ -82,11 +84,10 @@ public class Main {
                     break;
                 case 3:
                     // Ordenando veiculos em ordem decrescente de ano
-                    //Collections.sort(veiculos);
+                    Collections.sort(veiculos);
                     Collections.reverse(veiculos);
-                    for (Veiculo automovel : veiculos) {
-                        automovel.mostrarInfos();
-                    }
+                    for (Veiculo auto : veiculos)
+                        auto.mostrarInfos();
                     break;
 
                 case 4:
