@@ -18,9 +18,10 @@ while True:
     elif unswer == 2:
         header('Novo produto')
         name = str(input('Nome: '))
-        price = (input('Preço:'))
+        price = input('Preço:')
         brand = str(input('Marca: '))
-        registerProduct(file, name, price, brand)
+        quantity = input('Quantidade: ')
+        registerProduct(file, name, price, brand, quantity)
 
     elif unswer == 3:
         header('Opção 3')

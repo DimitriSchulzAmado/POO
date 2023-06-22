@@ -27,7 +27,7 @@ def readFile(name):
     except:
         print('Erro ao ler o arquivo!')
     else:
-        header('Prudotos cadastrados')
+        header('Produtos cadastrados:')
         cont = 1
 
         for linha in file:
@@ -35,22 +35,24 @@ def readFile(name):
             dado[2] = dado[2].replace('\n', '')
             print(f'\nProduto: {cont}')
             print(f'Nome: {dado[0]:}')
-            print(f'Preço: {dado[1]:}')
+            print(f'Preço: R${dado[1]:}')
             print(f'Marca: {dado[2]:}')
+            print(f'Quantidade: {dado[3]:}')
             cont = cont + 1
     finally:
         file.close()
 
-def registerProduct(arq, name, price, brand):
+
+def registerProduct(arq, name, price, brand, quantity):
     try:
         file = open(arq, 'at')
     except:
-        print('Houve um erro na leitura do arquivo!!')
+        print('Erro na leitura do arquivo!!')
     else:
         try:
-            file.write(f'{name};{price};{brand}\n')
+            file.write(f'{name};{price};{brand};{quantity}\n')
         except:
-            print('Houve um erro na hora de escrever os dados')
+            print('Erro na escrita dos dados!')
         else:
-            print(f'Novo produto {name} cadastrado.')
+            print(f'Novo produto da marca {brand} cadastrado!')
             file.close()
