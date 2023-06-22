@@ -16,7 +16,11 @@ while True:
         readFile(file)
 
     elif unswer == 2:
-        header('Opção 2')
+        header('Novo produto')
+        name = str(input('Nome: '))
+        price = (input('Preço:'))
+        brand = str(input('Marca: '))
+        registerProduct(file, name, price, brand)
 
     elif unswer == 3:
         header('Opção 3')
