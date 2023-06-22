@@ -1,6 +1,3 @@
-from src.model.Company import Company
-
-
 class Product:
 
     def __int__(self, name, price, brand):

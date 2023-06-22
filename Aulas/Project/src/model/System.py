@@ -1,13 +1,19 @@
-from lib.interface import *
 from time import sleep
 
+from src.view.file_path import *
+from src.view.interface import *
+
+file = 'produtos.txt'
+
+if not existsFile(file):
+    createFile(file)
 
 while True:
     unswer = menu(['Ver produtos casdastrados', 'Cadastrar novo pruduto',
                      'Vender produto', 'Comprar prduto', 'Sair do menu'])
     
     if unswer == 1:
-        header('Opção 1')
+        readFile(file)
 
     elif unswer == 2:
         header('Opção 2')
