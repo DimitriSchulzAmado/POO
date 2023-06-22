@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="905032c6-7802-4a00-bb80-fd641d657259" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../Laboratorio/ColecaoDeBrinquedos/src/Aviao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Laboratorio/ColecaoDeBrinquedos/src/Barco.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Laboratorio/ColecaoDeBrinquedos/src/Brinquedo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Laboratorio/ColecaoDeBrinquedos/src/Carrinho.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Laboratorio/ColecaoDeBrinquedos/src/ColecaoDeBrinquedos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Laboratorio/ColecaoDeBrinquedos/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Aula1/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Aula1/src/main/java/org/example/Exercicio2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Aula1/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab-StartJava/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab-StartJava/src/main/java/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Laboratorio/Exercicio01/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Laboratorio/Exercicio01/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2NnorBCT8KgxPIBFA3pGZfZtPWn" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.new.ui&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="905032c6-7802-4a00-bb80-fd641d657259" name="Changes" comment="" />
+      <created>1680309403565</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1680309403565</updated>
+    </task>
+    <servers />
+  </component>
+</project>
