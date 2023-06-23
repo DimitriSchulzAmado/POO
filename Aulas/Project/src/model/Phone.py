@@ -3,9 +3,12 @@ from src.model.Product import Product
 
 # Children Class
 class Phone(Product):
+    number_instances = 0
 
-    def __int__(self, name, price, brand, quantity):
-        super().__init__(name, price, brand, quantity)
+    def __init__(self, name, price, brand, quantity):
+        number_instances = Phone.number_instances + 1
+        self.product_id = Phone.number_instances
+        self.product_id = number_instances
 
     def sell_phone(self, buy):
         # Sell quantity need to be smaller that quantity in stock
