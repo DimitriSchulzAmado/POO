@@ -9,6 +9,7 @@ class Product:
         self.quantity = quantity
 
     def display_info(self):
+        '''show info from product'''
         print(f"Produto: {self.name}")
         print(f"Preço: ${self.price}")
         print(f"Marca: ${self.brand}")

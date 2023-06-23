@@ -1,6 +1,7 @@
 from src.model.Product import Product
 
 
+# Children Class
 class Phone(Product):
 
     def __int__(self, name, price, brand, quantity):

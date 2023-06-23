@@ -1,11 +1,11 @@
 from src.model.Product import Product
-from src.view.file_path import registerProduct
 
 
+# Children Class
 class Computer(Product):
 
-    def __int__(self, product_id, name, price, brand, quantity):
-        super().__init__(self, product_id, name, price, brand, quantity)
+    def __int__(self, name, price, brand, quantity):
+        super().__init__(self, name, price, brand, quantity)
 
     def display_info(self):
         print(f"ID do produto: {self.id}")

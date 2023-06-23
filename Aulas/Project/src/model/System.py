@@ -9,6 +9,7 @@ from src.view.interface import *
 
 file = 'produtos.txt'
 
+# See if file exists else create
 if not existsFile(file):
     createFile(file)
 

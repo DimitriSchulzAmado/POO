@@ -42,8 +42,8 @@ def readFile(name):
     finally:
         file.close()
 
-
 def registerProduct(arq, name, price, brand, quantity):
+    '''Register product in file'''
     try:
         file = open(arq, 'at')
     except:
