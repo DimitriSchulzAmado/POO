@@ -6,7 +6,7 @@ from src.model.Phone import Phone
 from src.view.file_path import *
 from src.view.interface import *
 
-
+# Create file
 file = 'produtos.txt'
 
 # See if file exists else create
@@ -14,9 +14,8 @@ if not existsFile(file):
     createFile(file)
 
 while True:
-    product_id = 0
     unswer = menu(['Ver produtos casdastrados', 'Cadastrar novo pruduto',
-                     'Vender produto', 'Comprar produto', 'Sair do menu'])
+                   'Vender produto', 'Comprar produto', 'Sair do menu'])
 
     # See register product
     if unswer == 1:
@@ -27,43 +26,55 @@ while True:
         header('Novo produto')
         choice = menu(['Celular', 'Notebook', 'Computador'])
 
-
         if choice == 1:
+            # Input properties from selected product
             name = str(input('Modelo: '))
             price = input('Preço:')
             brand = str(input('Marca: '))
             quantity = input('Quantidade: ')
 
-            phone = Phone()
+            # Instance Phone
+            phone = Phone(name, price, brand, quantity)
             registerProduct(file, name, price, brand, quantity)
 
         elif choice == 2:
+            # Input properties from selected product
             name = str(input('Modelo: '))
             price = input('Preço:')
             brand = str(input('Marca: '))
             quantity = input('Quantidade: ')
-            product_id = product_id + 1
 
-            notebook = Notebook()
+            # Instance Notebook
+            notebook = Notebook(name, price, brand, quantity)
             registerProduct(file, name, price, brand, quantity)
 
         elif choice == 3:
+            # Input properties from selected product
             name = str(input('Modelo: '))
             price = input('Preço:')
             brand = str(input('Marca: '))
             quantity = input('Quantidade: ')
-            product_id = product_id + 1
 
-            #
-            computer = Computer()
+            # Instance Computer
+            computer = Computer(name, price, brand, quantity)
             registerProduct(file, name, price, brand, quantity)
 
     # Sell Product
     elif unswer == 3:
         header('Opção 3')
+        # Select product to sell
+        selected_product = input('Produto: ')
         buy = input('Quantidade: ')
-        phone = Phone()
-        phone.sell_phone(buy)
+
+        if selected_product == 'Celular':
+            phone = Phone(name, price, brand, quantity)
+            phone.sell_phone(buy)
+        elif selected_product == 'Notebook':
+            notebook = Notebook(name, price, brand, quantity)
+            notebook.sell_notebook(buy)
+        elif selected_product == 'Computer':
+            computer = Computer(name, price, brand, quantity)
+            computer.sell_computer(buy)
 
     # Buy Product
     elif unswer == 4:
@@ -76,6 +87,3 @@ while True:
     else:
         print('\033[31mERRO!! Digite uma opção válida\033[m')
     sleep(2)
-
-
-
