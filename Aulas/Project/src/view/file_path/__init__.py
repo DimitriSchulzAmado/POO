@@ -33,7 +33,7 @@ def readFile(name):
         for linha in file:
             dado = linha.split(';')
             dado[2] = dado[2].replace('\n', '')
-            print(f'\nProduto: {cont}')
+            print(f'\nPRODUTO: {cont}')
             print(f'Nome: {dado[0]:}')
             print(f'Preço: R${dado[1]:}')
             print(f'Marca: {dado[2]:}')

@@ -2,7 +2,7 @@ from src.model.Product import Product
 from src.view.file_path import registerProduct
 
 
-class Notebook(Product):
+class Computer(Product):
 
     def __int__(self, product_id, name, price, brand, quantity):
         super().__init__(self, product_id, name, price, brand, quantity)
@@ -14,5 +14,5 @@ class Notebook(Product):
         print(f"Marca: ${self.brand}")
         print(f"Quantidade: ${self.quantity}")
 
-    def sellCotebook(self):
+    def sell_computer(self):
         pass
