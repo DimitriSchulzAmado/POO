@@ -1,3 +1,0 @@
-Celular;2000;motorola
-notebook;7899.90;Dell
-Google P6;5970.99;Google;3
