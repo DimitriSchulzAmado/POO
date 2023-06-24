@@ -1,11 +1,10 @@
 from time import sleep
 
-from src.model.Product import Product
 from src.model.Computer import Computer
 from src.model.Notebook import Notebook
 from src.model.Phone import Phone
-from src.view.file_path import *
-from src.view.interface import *
+from src.controller.file_path import *
+from src.controller.interface import *
 
 # Create file
 file = 'produtos.txt'
