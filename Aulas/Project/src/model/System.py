@@ -1,5 +1,6 @@
 from time import sleep
 
+from src.model.Product import Product
 from src.model.Computer import Computer
 from src.model.Notebook import Notebook
 from src.model.Phone import Phone
@@ -64,21 +65,28 @@ while True:
         header('Opção 3')
         # Select product to sell
         selected_product = input('Produto: ')
-        buy = input('Quantidade: ')
+        sell = int(input('Quantidade: '))
 
         if selected_product == 'Celular':
-            phone = Phone(name, price, brand, quantity)
-            phone.sell_phone(buy)
+            Phone.sell_product(sell)
         elif selected_product == 'Notebook':
-            notebook = Notebook(name, price, brand, quantity)
-            notebook.sell_notebook(buy)
+            Notebook.sell_product(sell)
         elif selected_product == 'Computer':
-            computer = Computer(name, price, brand, quantity)
-            computer.sell_computer(buy)
+            Computer.sell_product(sell)
 
     # Buy Product
     elif unswer == 4:
         header('Opção 4')
+        # Select product to sell
+        selected_product = input('Produto: ')
+        buy = input('Quantidade: ')
+
+        if selected_product == 'Celular':
+            Phone.sell_product(buy)
+        elif selected_product == 'Notebook':
+            Notebook.sell_product(buy)
+        elif selected_product == 'Computer':
+            Computer.sell_product(buy)
 
     # Exit menu
     elif unswer == 5:
