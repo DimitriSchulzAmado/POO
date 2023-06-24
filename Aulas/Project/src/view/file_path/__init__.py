@@ -2,6 +2,7 @@ from src.view.interface import header
 
 
 def existsFile(name):
+    """Treat error if the file already exist"""
     try:
         file = open(name, 'rt')
         file.close()
@@ -12,6 +13,7 @@ def existsFile(name):
 
 
 def createFile(name):
+    """ Generate file """
     try:
         file = open(name, 'wt+')
         file.close()
@@ -22,6 +24,7 @@ def createFile(name):
 
 
 def readFile(name):
+    """ Read file and return value """
     try:
         file = open(name, 'rt')
     except:
@@ -43,7 +46,7 @@ def readFile(name):
         file.close()
 
 def registerProduct(arq, name, price, brand, quantity):
-    '''Register product in file'''
+    """Register product in file"""
     try:
         file = open(arq, 'at')
     except:

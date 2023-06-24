@@ -1,4 +1,5 @@
 def readInt(message):
+    """ Treat choice option error """
     while True:
         try:
             n = int(input(message))
@@ -13,16 +14,19 @@ def readInt(message):
 
 
 def line(size_line=42):
+    """ Put line to separe menu of rest """
     return '-' * size_line
 
 
 def header(txt):
+    """ Header to menu and your options """
     print(line())
     print(txt)
     print(line())
 
 
 def menu(menu_list):
+    """ Put color in words and header at menu items """
     header('MENU')
     c = 1
     for item in menu_list:

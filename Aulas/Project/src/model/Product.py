@@ -7,14 +7,14 @@ class Product:
         self.quantity = quantity
 
     def sell_product(self, sell):
-        '''
-            Sell quantity need to be smaller that quantity in stock
-        '''
-
+        """
+            Method for treatment of sell products
+        """
         # Open file to read
         with open('produtos.txt', 'r') as file:
             content = file.read()
 
+        # Sell quantity need to be smaller that quantity in stock
         if self.quantity >= sell:
             # decrease amount and replace in file
             update_data = self.quantity - sell
@@ -26,14 +26,17 @@ class Product:
             print(f'Quantidade fora de estoque! Quantidade maxima até {self.quantity}')
 
     def buy_product(self, buy):
-        '''Sell quantity need to be smaller that quantity in stock'''
+        """
+            Method for treatment of sell products
+        """
+        # Sell quantity need to be smaller that quantity in stock
         # Open file to read
         with open('produtos.txt', 'r') as file:
             content = file.read()
 
         if self.quantity >= buy:
             # decrease amount and replace in file
-            update_data = self.quantity - buy
+            update_data = self.quantity + buy
             conteudo_modificado = content.replace(self.quantity, update_data)
 
             with open('produtos.txt', 'w') as file:
